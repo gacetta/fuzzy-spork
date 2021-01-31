@@ -1,4 +1,4 @@
-# fuzzy-spork
+# game-night-survey
 project files for Game Night Survey
 
 Things I want to do:
