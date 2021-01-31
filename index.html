@@ -1,0 +1,60 @@
+<body>
+  <header class="header">
+    <h1>Game Night Survey Form</h1>
+    <p class="description">I play games. You play games. When shall we all play the games?</p>
+    <p class="sub-description">(Did you sing that to the tune of Barney?)</p>
+  </header>
+  
+  <main class="main-form">
+   <form action="mailto:michael.gacetta@gmail.com">
+     <label class="label-spacing">Name</label>
+     <input class="input-field" type="text" placeholder="Enter your name" required>
+     <label class="label-spacing">Email</label>
+     <input class="input-field" type="email" placeholder="Enter your email" required>
+     <label class="label-spacing">Rank your excitement on a scale of 1 to 10 <br></label>
+     <label class="sub-label-spacing">(1 being eeyore and 10 being as excited as a kid at christmas)</label>
+     <input class="input-field" type="number" min="1" max="10"  placeholder="Rate your excitement level">
+     <label class="label-spacing" for="game-system">On which platform would you like to play games</label>
+     
+     <select class="dropdown" name="game-system">
+       <option value="switch">Nintendo Switch</option>
+       <option value="computer">Computer</option>
+       <option value="jackbox">Jackbox Games via ZOOM</option>
+     </select>
+     
+     <label class="label-spacing">Do you have any preferred game(s) you'd like to play?</label>
+     <input class="input-field" placeholder="What game(s) would you like to play">
+    
+     <div class="checkbox">
+     <label class="label-spacing" for="what-time">What time works best for you?<i> (check all that apply)</i></label>
+     <input type="checkbox" name="what-time" value="afternoon">
+     <label for="afternoon" class="checkbox-label">Afternoon between 3pm-6pm EST</label><br>
+     <input type="checkbox" name="what-time" value="evening">
+     <label for="evening" class="checkbox-label">Evening between 6pm-9pm EST</label><br>
+     <input type="checkbox" name="what-time" value="night">
+     <label for="night" class="checkbox-label">Night time after 9pm EST</label><br>
+     </div>
+     
+     <label class="label-spacing" for="what-day">What days can you play games?<i> (check all that apply)</i></label>
+     <input type="checkbox" name="day1" value="monday">
+     <label for="day1" class="checkbox-label">Monday</label><br>
+     <input type="checkbox" id="day2" name="day2" value="tuesday">
+     <label for="day2" class="checkbox-label">Tuesday</label><br>
+     <input type="checkbox" id="day3" name="day3" value="wednesday">
+     <label for="day3" class="checkbox-label">Wednesday</label><br>
+     <input type="checkbox" id="day4" name="day4" value="thursday">
+     <label for="day4" class="checkbox-label">Thursday</label><br>
+     <input type="checkbox" id="day5" name="day5" value="friday">
+     <label for="day5" class="checkbox-label">Friyay!</label><br>
+     <input type="checkbox" id="day6" name="day6" value="saturday">
+     <label for="day6" class="checkbox-label">Saturdizzle</label><br>
+     <input type="checkbox" id="day7" name="day7" value="sunday">
+     <label for="day7" class="checkbox-label">Sunday Funday</label><br>
+     
+     <label for="final-comments" class="label-spacing">Any other information you would like to share?</label>
+     <textarea placeholder="Games are awesome and so are farts."  class="final-comments" name="final-comments"></textarea><br>
+     
+     <input type="submit" class="submit" value="Submit">
+    </form>   
+  </main>
+</body>
